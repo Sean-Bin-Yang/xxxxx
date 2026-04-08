@@ -43,7 +43,7 @@ You can pre-train **REFINE** through the following commands：
 
 ```shell
 # Porto
-python pretining.py --exp_id <set_exp_id> --dataset porto --device 0 --lr 1e-5 --batch_size 32 --epochs 10 --g_depths 0 --g_heads_per_layer [8,16,1] --g_dim_per_layer [16,16,128] --g_dropout 0.1 --enc_embed_dim 128 --enc_ffn_dim 512 --enc_depths 2 --enc_num_heads 8 --enc_emb_dropout 0.1 --enc_tfm_dropout 0.1 --dec_embed_dim 128 --dec_ffn_dim 512 --dec_depths 2 --dec_num_heads 8 --dec_emb_dropout 0.1 --dec_tfm_dropout 0.1
+python pretining.py --exp_id <set_exp_id> --dataset porto --device 0 --lr 1e-6 --batch_size 32 --epochs 10 --g_depths 0 --g_heads_per_layer [8,16,1] --g_dim_per_layer [16,16,128] --g_dropout 0.1 --enc_embed_dim 128 --enc_ffn_dim 512 --enc_depths 2 --enc_num_heads 8 --enc_emb_dropout 0.1 --enc_tfm_dropout 0.1 --dec_embed_dim 128 --dec_ffn_dim 512 --dec_depths 2 --dec_num_heads 8 --dec_emb_dropout 0.1 --dec_tfm_dropout 0.1
 ```
 
  ## Fine-tune
