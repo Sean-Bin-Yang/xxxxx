@@ -186,9 +186,9 @@ class REFINETrainer:
             torch.nn.utils.clip_grad_norm_(self.model.parameters(), 1.0)
             self.optimizer.step()
             loss_val = torch.nn.functional.softplus(tloss.detach()).cpu().item()
-            pbar.set_description('[{} Epoch {}/{}: loss: %f]'.format(iteration_type, str(epoch), str(self.epochs)) % loss_val)
-            losses.append(loss_val)
-        return sum(losses)/len(losses)
+            pbar.set_description('[{} Epoch {}/{}: loss: %f]'.format(iteration_type, str(epoch), str(self.epochs)) % tloss)
+            losses.append(tloss.item())
+        return np.array(losses).mean()
 
     def train(self):
         start_time = time.time()
