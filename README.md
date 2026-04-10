@@ -1,10 +1,10 @@
-## REFINE: Trajectory Representation Learning via Closed-Loop Transcription
+## xxxxx xxxx
 
-This code is the official PyTorch implementation of our paper: REFINE: Trajectory Representation Learning via Closed-Loop Transcription.
+This code is the official PyTorch implementation of our paper: xxxx
 
 ### Introduction
 
-**REFINE** is a simple yet effective representation learning framework for trajectory data, equipped with closed-loop theoretical guarantees through a transcription refinement mechanism. It integrates road network–aware generative reconstruction with feedback-driven contrastive learning, enabling the model to capture both fine-grained local movement semantics and global spatio-temporal dependencies—without relying on manually designed augmentation views.
+**xxxx** is a simple yet effective representation learning framework for trajectory data, equipped with closed-loop theoretical guarantees through a transcription refinement mechanism. It integrates road network–aware generative reconstruction with feedback-driven contrastive learning, enabling the model to capture both fine-grained local movement semantics and global spatio-temporal dependencies—without relying on manually designed augmentation views.
 
 <div align=center>
 <img src="Framework.png"/>
@@ -39,7 +39,7 @@ After performing map matching with [FMM](https://github.com/cyang-kth/fmm), you 
 
 ### Pre-Train
 
-You can pre-train **REFINE** through the following commands：
+You can pre-train **xxx** through the following commands：
 
 ```shell
 # Porto
